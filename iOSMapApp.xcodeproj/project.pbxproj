@@ -13,6 +13,8 @@
 		82EC59B12AC58940005114AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82EC59B02AC58940005114AC /* Assets.xcassets */; };
 		82EC59B62AC58A65005114AC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59B52AC58A65005114AC /* Location.swift */; };
 		82EC59B92AC58D4C005114AC /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59B82AC58D4C005114AC /* LocationsDataService.swift */; };
+		82EC59BB2AC58E9E005114AC /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59BA2AC58E9E005114AC /* LocationsView.swift */; };
+		82EC59BD2AC5CEB2005114AC /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59BC2AC5CEB2005114AC /* LocationsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		82EC59B02AC58940005114AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82EC59B52AC58A65005114AC /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		82EC59B82AC58D4C005114AC /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		82EC59BA2AC58E9E005114AC /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		82EC59BC2AC5CEB2005114AC /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +43,7 @@
 		82EC59962AC584E0005114AC = {
 			isa = PBXGroup;
 			children = (
-				82EC59A12AC584E0005114AC /* iOSMapAp */,
+				82EC59A12AC584E0005114AC /* iOSMapApp */,
 				82EC59A02AC584E0005114AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,7 +56,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		82EC59A12AC584E0005114AC /* iOSMapAp */ = {
+		82EC59A12AC584E0005114AC /* iOSMapApp */ = {
 			isa = PBXGroup;
 			children = (
 				82EC59B72AC58D29005114AC /* DataServices */,
@@ -64,7 +68,7 @@
 				82EC59B02AC58940005114AC /* Assets.xcassets */,
 				82EC59A82AC584E1005114AC /* Preview Content */,
 			);
-			path = iOSMapAp;
+			path = iOSMapApp;
 			sourceTree = "<group>";
 		};
 		82EC59A82AC584E1005114AC /* Preview Content */ = {
@@ -78,6 +82,7 @@
 		82EC59B22AC58A36005114AC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				82EC59BC2AC5CEB2005114AC /* LocationsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 		82EC59B42AC58A49005114AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				82EC59BA2AC58E9E005114AC /* LocationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,7 +182,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				82EC59B92AC58D4C005114AC /* LocationsDataService.swift in Sources */,
+				82EC59BD2AC5CEB2005114AC /* LocationsViewModel.swift in Sources */,
 				82EC59A52AC584E0005114AC /* ContentView.swift in Sources */,
+				82EC59BB2AC58E9E005114AC /* LocationsView.swift in Sources */,
 				82EC59B62AC58A65005114AC /* Location.swift in Sources */,
 				82EC59A32AC584E0005114AC /* iOSMapApApp.swift in Sources */,
 			);
@@ -306,7 +314,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOSMapAp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"iOSMapApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 2MPX3NCR38;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -335,7 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iOSMapAp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"iOSMapApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 2MPX3NCR38;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
