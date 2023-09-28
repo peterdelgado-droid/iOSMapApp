@@ -9,16 +9,20 @@
 /* Begin PBXBuildFile section */
 		82EC59A32AC584E0005114AC /* iOSMapApApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59A22AC584E0005114AC /* iOSMapApApp.swift */; };
 		82EC59A52AC584E0005114AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59A42AC584E0005114AC /* ContentView.swift */; };
-		82EC59A72AC584E1005114AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82EC59A62AC584E1005114AC /* Assets.xcassets */; };
 		82EC59AA2AC584E1005114AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82EC59A92AC584E1005114AC /* Preview Assets.xcassets */; };
+		82EC59B12AC58940005114AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82EC59B02AC58940005114AC /* Assets.xcassets */; };
+		82EC59B62AC58A65005114AC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59B52AC58A65005114AC /* Location.swift */; };
+		82EC59B92AC58D4C005114AC /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC59B82AC58D4C005114AC /* LocationsDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		82EC599F2AC584E0005114AC /* iOSMapAp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMapAp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EC599F2AC584E0005114AC /* iOSMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EC59A22AC584E0005114AC /* iOSMapApApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMapApApp.swift; sourceTree = "<group>"; };
 		82EC59A42AC584E0005114AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		82EC59A62AC584E1005114AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82EC59A92AC584E1005114AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82EC59B02AC58940005114AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82EC59B52AC58A65005114AC /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		82EC59B82AC58D4C005114AC /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +47,7 @@
 		82EC59A02AC584E0005114AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				82EC599F2AC584E0005114AC /* iOSMapAp.app */,
+				82EC599F2AC584E0005114AC /* iOSMapApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,9 +55,13 @@
 		82EC59A12AC584E0005114AC /* iOSMapAp */ = {
 			isa = PBXGroup;
 			children = (
+				82EC59B72AC58D29005114AC /* DataServices */,
+				82EC59B42AC58A49005114AC /* Views */,
+				82EC59B32AC58A42005114AC /* Models */,
+				82EC59B22AC58A36005114AC /* ViewModels */,
 				82EC59A22AC584E0005114AC /* iOSMapApApp.swift */,
 				82EC59A42AC584E0005114AC /* ContentView.swift */,
-				82EC59A62AC584E1005114AC /* Assets.xcassets */,
+				82EC59B02AC58940005114AC /* Assets.xcassets */,
 				82EC59A82AC584E1005114AC /* Preview Content */,
 			);
 			path = iOSMapAp;
@@ -67,12 +75,42 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		82EC59B22AC58A36005114AC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		82EC59B32AC58A42005114AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82EC59B52AC58A65005114AC /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		82EC59B42AC58A49005114AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		82EC59B72AC58D29005114AC /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				82EC59B82AC58D4C005114AC /* LocationsDataService.swift */,
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		82EC599E2AC584E0005114AC /* iOSMapAp */ = {
+		82EC599E2AC584E0005114AC /* iOSMapApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 82EC59AD2AC584E1005114AC /* Build configuration list for PBXNativeTarget "iOSMapAp" */;
+			buildConfigurationList = 82EC59AD2AC584E1005114AC /* Build configuration list for PBXNativeTarget "iOSMapApp" */;
 			buildPhases = (
 				82EC599B2AC584E0005114AC /* Sources */,
 				82EC599C2AC584E0005114AC /* Frameworks */,
@@ -82,9 +120,9 @@
 			);
 			dependencies = (
 			);
-			name = iOSMapAp;
+			name = iOSMapApp;
 			productName = iOSMapAp;
-			productReference = 82EC599F2AC584E0005114AC /* iOSMapAp.app */;
+			productReference = 82EC599F2AC584E0005114AC /* iOSMapApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +140,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 82EC599A2AC584E0005114AC /* Build configuration list for PBXProject "iOSMapAp" */;
+			buildConfigurationList = 82EC599A2AC584E0005114AC /* Build configuration list for PBXProject "iOSMapApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +153,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				82EC599E2AC584E0005114AC /* iOSMapAp */,
+				82EC599E2AC584E0005114AC /* iOSMapApp */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +163,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82EC59B12AC58940005114AC /* Assets.xcassets in Resources */,
 				82EC59AA2AC584E1005114AC /* Preview Assets.xcassets in Resources */,
-				82EC59A72AC584E1005114AC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82EC59B92AC58D4C005114AC /* LocationsDataService.swift in Sources */,
 				82EC59A52AC584E0005114AC /* ContentView.swift in Sources */,
+				82EC59B62AC58A65005114AC /* Location.swift in Sources */,
 				82EC59A32AC584E0005114AC /* iOSMapApApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,7 +360,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		82EC599A2AC584E0005114AC /* Build configuration list for PBXProject "iOSMapAp" */ = {
+		82EC599A2AC584E0005114AC /* Build configuration list for PBXProject "iOSMapApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82EC59AB2AC584E1005114AC /* Debug */,
@@ -329,7 +369,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82EC59AD2AC584E1005114AC /* Build configuration list for PBXNativeTarget "iOSMapAp" */ = {
+		82EC59AD2AC584E1005114AC /* Build configuration list for PBXNativeTarget "iOSMapApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				82EC59AE2AC584E1005114AC /* Debug */,
