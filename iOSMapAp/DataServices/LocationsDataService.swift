@@ -1,8 +1,8 @@
 //
-//  LocationsDataService.swift
-//  MapTest
+//  Location.swift
+//  iOSMapApp
 //
-//  Created by Nick Sarno on 11/26/21.
+//  Created by Peter Delgado on 28/9/23.
 //
 
 import Foundation
